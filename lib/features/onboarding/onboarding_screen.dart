@@ -1,3 +1,4 @@
+import 'package:doctor_app/features/onboarding/widgets/logo_and_app_title.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -5,6 +6,6 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(body: Column(children: [LogoAndAppTitle()]));
   }
 }
