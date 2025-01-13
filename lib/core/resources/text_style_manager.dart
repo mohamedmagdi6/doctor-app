@@ -70,9 +70,9 @@ class TextStyleManager {
     );
   }
 
-  static textstyleS9W400Grey() {
+  static textstyleS10W400Grey() {
     return GoogleFonts.dmSans(
-      fontSize: 9,
+      fontSize: 10.sp,
       fontWeight: FontWeight.w400,
       color: AppColors.textGreyColor,
     );
@@ -99,6 +99,14 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 19,
       fontWeight: FontWeight.w700,
+      color: AppColors.whiteColor,
+    );
+  }
+
+  static textstyleS16W600White() {
+    return GoogleFonts.dmSans(
+      fontSize: 16,
+      fontWeight: FontWeight.w600,
       color: AppColors.whiteColor,
     );
   }
