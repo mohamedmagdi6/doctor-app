@@ -1,5 +1,6 @@
 import 'package:doctor_app/core/resources/color_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextStyleManager {
@@ -103,6 +104,14 @@ class TextStyleManager {
   }
 
   //primaryColor
+  static textstyleS32W700Primary() {
+    return GoogleFonts.dmSans(
+      fontSize: 32.sp,
+      fontWeight: FontWeight.w700,
+      color: AppColors.primaryColor,
+    );
+  }
+
   static textstyleS19W500Primary() {
     return GoogleFonts.dmSans(
       fontSize: 19,
