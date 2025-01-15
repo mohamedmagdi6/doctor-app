@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.0-243.0.dev
+  sdk: ^3.6.1-243.0.dev
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -52,10 +52,8 @@ dependencies:
   #  localizations
   intl: 
   easy_localization: 
-  # for splash screen
-  flutter_native_splash: 
   #  An svg rendering library
-  flutter_svg: ^2.0.17
+  flutter_svg: 
   # text styling
   google_fonts:
   # for responsive design
