@@ -1,0 +1,10 @@
+flutter_native_splash:
+
+  color: "#ffffff"
+  background_image: "assets/images/splash.png"
+  android: true                  # Enable Android support
+  ios: true                      # Enable iOS support
+  web: false                     # Disable web splash screen
+  fullscreen: true               # Remove status bar (optional)
+  android_gravity: center        # Set Android gravity
+  android_12:

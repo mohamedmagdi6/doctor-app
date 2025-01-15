@@ -58,6 +58,8 @@ dependencies:
   google_fonts:
   # for responsive design
   flutter_screenutil:
+  # flutter native splash
+  flutter_native_splash: ^2.4.4
 
 dev_dependencies:
   flutter_test:
