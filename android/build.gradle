@@ -16,3 +16,12 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
+buildscript {
+    ext {
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+        minSdkVersion = 21
+        kotlinVersion = '1.8.0'
+    }
+}
