@@ -39,7 +39,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
         width: widget.width ?? MediaQuery.of(context).size.width * 0.9,
         padding: EdgeInsets.symmetric(horizontal: 16.w),
         decoration: BoxDecoration(
-          color: AppColors.primaryColor.withAlpha(30),
+          color: ColorsManager.primaryColor.withAlpha(30),
           borderRadius: BorderRadius.circular(10.r),
           border: Border.all(color: Colors.transparent),
         ),
@@ -48,9 +48,10 @@ class _CustomDropDownState extends State<CustomDropDown> {
             value: _selectedItem,
             icon: Image.asset(
               IconsAssets.arrowDown,
-              color: AppColors.primaryColor,
+              color: ColorsManager.primaryColor,
             ),
-            style: TextStyle(color: AppColors.primaryColor, fontSize: 16.sp),
+            style:
+                TextStyle(color: ColorsManager.primaryColor, fontSize: 16.sp),
             onChanged: (String? newValue) {
               setState(() {
                 _selectedItem = newValue;
@@ -59,13 +60,12 @@ class _CustomDropDownState extends State<CustomDropDown> {
                 widget.onChanged!(newValue);
               }
             },
-            items:
-                widget.items.map<DropdownMenuItem<String>>((String value) {
-                  return DropdownMenuItem<String>(
-                    value: value,
-                    child: Text(value),
-                  );
-                }).toList(),
+            items: widget.items.map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              );
+            }).toList(),
           ),
         ),
       ),

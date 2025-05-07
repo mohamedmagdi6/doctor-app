@@ -16,13 +16,12 @@ class StackOfOnboardingScreen extends StatelessWidget {
             gradient: LinearGradient(
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
-              stops:
-                  List.empty(growable: true)
-                    ..add(0.1)
-                    ..add(0.3),
+              stops: List.empty(growable: true)
+                ..add(0.1)
+                ..add(0.3),
               colors: [
-                AppColors.whiteColor,
-                AppColors.whiteColor.withAlpha(10),
+                ColorsManager.whiteColor,
+                ColorsManager.whiteColor.withAlpha(10),
               ],
             ),
           ),
@@ -35,7 +34,7 @@ class StackOfOnboardingScreen extends StatelessWidget {
           child: Text(
             'Best Doctor \nAppointment App',
             textAlign: TextAlign.center,
-            style: TextStyleManager.textstyleS32W700Primary(),
+            style: TextStyles.textstyleS32W700Primary(),
           ),
         ),
       ],

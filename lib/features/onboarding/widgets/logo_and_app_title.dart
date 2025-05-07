@@ -13,7 +13,7 @@ class LogoAndAppTitle extends StatelessWidget {
       children: [
         SvgPicture.asset('assets/svgs/logo.svg'),
         SizedBox(width: 10.w),
-        Text('Docdoc', style: TextStyleManager.textstyleS24W700Black()),
+        Text('Docdoc', style: TextStyles.textstyleS24W700Black()),
       ],
     );
   }

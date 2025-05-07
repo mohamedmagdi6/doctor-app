@@ -1,15 +1,16 @@
 import 'package:doctor_app/core/resources/color_manager.dart';
+import 'package:doctor_app/core/resources/font_weight.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class TextStyleManager {
+class TextStyles {
   //blackColor
   static textstyleS24W700Black() {
     return GoogleFonts.dmSans(
       fontSize: 24,
       fontWeight: FontWeight.w700,
-      color: AppColors.blackColor,
+      color: ColorsManager.blackColor,
     );
   }
 
@@ -17,7 +18,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 16,
       fontWeight: FontWeight.w700,
-      color: AppColors.blackColor,
+      color: ColorsManager.blackColor,
     );
   }
 
@@ -25,7 +26,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: AppColors.blackColor,
+      color: ColorsManager.blackColor,
     );
   }
 
@@ -33,7 +34,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 14,
       fontWeight: FontWeight.w400,
-      color: AppColors.blackColor,
+      color: ColorsManager.blackColor,
     );
   }
 
@@ -42,7 +43,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 18,
       fontWeight: FontWeight.w700,
-      color: AppColors.textGreyColor,
+      color: ColorsManager.textGreyColor,
     );
   }
 
@@ -50,7 +51,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 14,
       fontWeight: FontWeight.w400,
-      color: AppColors.textGreyColor,
+      color: ColorsManager.textGreyColor,
     );
   }
 
@@ -58,7 +59,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 16,
       fontWeight: FontWeight.w700,
-      color: AppColors.textGreyColor,
+      color: ColorsManager.textGreyColor,
     );
   }
 
@@ -66,7 +67,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 16,
       fontWeight: FontWeight.w700,
-      color: AppColors.textGreyColor,
+      color: ColorsManager.textGreyColor,
     );
   }
 
@@ -74,7 +75,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 10.sp,
       fontWeight: FontWeight.w400,
-      color: AppColors.textGreyColor,
+      color: ColorsManager.textGreyColor,
     );
   }
 
@@ -82,7 +83,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 14,
       fontWeight: FontWeight.w400,
-      color: AppColors.textHintGreyColor,
+      color: ColorsManager.textHintGreyColor,
     );
   }
 
@@ -90,7 +91,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 12,
       fontWeight: FontWeight.w500,
-      color: AppColors.textGreyColor,
+      color: ColorsManager.textGreyColor,
     );
   }
 
@@ -99,7 +100,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 19,
       fontWeight: FontWeight.w700,
-      color: AppColors.whiteColor,
+      color: ColorsManager.whiteColor,
     );
   }
 
@@ -107,7 +108,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 16,
       fontWeight: FontWeight.w600,
-      color: AppColors.whiteColor,
+      color: ColorsManager.whiteColor,
     );
   }
 
@@ -116,7 +117,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 32.sp,
       fontWeight: FontWeight.w700,
-      color: AppColors.primaryColor,
+      color: ColorsManager.primaryColor,
     );
   }
 
@@ -124,7 +125,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 19,
       fontWeight: FontWeight.w500,
-      color: AppColors.primaryColor,
+      color: ColorsManager.primaryColor,
     );
   }
 
@@ -132,7 +133,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 16,
       fontWeight: FontWeight.w700,
-      color: AppColors.primaryColor,
+      color: ColorsManager.primaryColor,
     );
   }
 
@@ -140,7 +141,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 14,
       fontWeight: FontWeight.w400,
-      color: AppColors.primaryColor,
+      color: ColorsManager.primaryColor,
     );
   }
 
@@ -148,7 +149,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 12,
       fontWeight: FontWeight.w400,
-      color: AppColors.primaryColor,
+      color: ColorsManager.primaryColor,
     );
   }
 
@@ -157,7 +158,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 12,
       fontWeight: FontWeight.w400,
-      color: AppColors.whiteColor,
+      color: ColorsManager.whiteColor,
     );
   }
 
@@ -166,7 +167,7 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 16,
       fontWeight: FontWeight.w500,
-      color: AppColors.orangeColor,
+      color: ColorsManager.orangeColor,
     );
   }
 
@@ -174,7 +175,85 @@ class TextStyleManager {
     return GoogleFonts.dmSans(
       fontSize: 12,
       fontWeight: FontWeight.w400,
-      color: AppColors.orangeColor,
+      color: ColorsManager.orangeColor,
     );
   }
+
+  // omar ahmed
+  static TextStyle font24BlackBold = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+  );
+
+  static TextStyle font32BlueBold = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: ColorsManager.mainBlue,
+  );
+
+  static TextStyle font13BlueSemiBold = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.semiBold,
+    color: ColorsManager.mainBlue,
+  );
+
+  static TextStyle font13DarkBlueMedium = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.darkBlue,
+  );
+
+  static TextStyle font13DarkBlueRegular = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.darkBlue,
+  );
+
+  static TextStyle font24BlueBold = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: ColorsManager.mainBlue,
+  );
+
+  static TextStyle font16WhiteSemiBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.semiBold,
+    color: Colors.white,
+  );
+
+  static TextStyle font13GrayRegular = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.gray,
+  );
+
+  static TextStyle font13BlueRegular = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.mainBlue,
+  );
+
+  static TextStyle font14GrayRegular = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.gray,
+  );
+
+  static TextStyle font14LightGrayRegular = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.lightGray,
+  );
+
+  static TextStyle font14DarkBlueMedium = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.darkBlue,
+  );
+  static TextStyle font16WhiteMedium = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: Colors.white,
+  );
 }

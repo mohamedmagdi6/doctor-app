@@ -1,0 +1,2 @@
+D:/projects/doctor-app/android/app/.cxx/Debug/303s2g6l/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/projects/doctor-app/android/app/.cxx/Debug/303s2g6l/armeabi-v7a/CMakeFiles/rebuild_cache.dir
